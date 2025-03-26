@@ -1,0 +1,358 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+    color: #dcdcdc;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a,
+.nav-links li button {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    /* Transparent white */
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links li a:hover,
+.nav-links li button:hover {
+    background: #ffffff;
+    color: #141e30;
+    /* Deep Blue */
+}
+
+/* Header and Footer Styles */
+header,
+footer {
+    text-align: center;
+    padding: 1.5em;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    /* Cool gradient */
+    color: #ffffff;
+    /* White text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a,
+nav ul li button {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    /* Transparent white */
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+nav ul li a:hover,
+nav ul li button:hover {
+    background: #ffffff;
+    color: #4facfe;
+    /* Cool blue */
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Music List Background */
+.music-list-background {
+    background: rgb(232 217 255 / 90%);
+    /* Light overlay */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Music List */
+#music-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Music Grid */
+#music-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Song Item Styles */
+.song-item {
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    /* Green to Blue gradient */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #ffffff;
+}
+
+.song-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.song-item audio {
+    width: 100%;
+    outline: none;
+    margin-top: 15px;
+}
+
+.song-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Music Card */
+.music-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.music-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.music-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.music-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.music-info h3 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.music-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tags span {
+    display: inline-block;
+    background: #e0e0e0;
+    color: #333;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+/* Song Box */
+.song-box {
+    background: linear-gradient(to right, #7fead8, #feb47b);
+    /* Orange gradient */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.song-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.song-box p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.song-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Controls */
+.controls {
+    margin-top: 15px;
+}
+
+.controls button {
+    background-color: #ff7e5f;
+    /* Warm orange */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #feb47b;
+    /* Lighter orange */
+}
+
+/* Button Styles */
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    /* Blue background */
+    color: white;
+    /* White text */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+/* Light Mode Styles */
+body.light {
+    background: linear-gradient(to right, #fceabb, #f8b500);
+    /* Light Yellow gradient */
+    color: #333;
+    /* Dark text */
+}
+
+body.light header,
+body.light footer {
+    background: linear-gradient(to right, #5a5556, #a86ba2);
+    /* Any color u want */
+    color: #333;
+    /* Dark text */
+}
+
+body.light main {
+    background: rgba(255, 255, 255, 0.8);
+    /* Transparent white overlay */
+    color: #333;
+    /* Dark text */
+}
+
+/* Dark Mode Styles */
+body.dark {
+    background: linear-gradient(to right, #232526, #414345);
+    /* Dark Gray gradient */
+    color: #ffffff;
+    /* White text */
+}
+
+body.dark header,
+body.dark footer {
+    background: linear-gradient(to right, #141e30, #243b55);
+    /* Deep Blue gradient */
+    color: #ffffff;
+    /* White text */
+}
+
+body.dark main {
+    background: rgba(0, 0, 0, 0.8);
+    /* Transparent black overlay */
+    color: #ffffff;
+    /* White text */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #141e30, #977beb);
+    /* Deep Blue gradient */
+    color: #ffffff;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+}
