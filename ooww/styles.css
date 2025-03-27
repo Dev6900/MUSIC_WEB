@@ -3,16 +3,22 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    background: #ffffff;
+    /* Full white background */
+    color: #333333;
+    /* Dark gray text */
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, #141e30, #243b55);
-    color: #ffffff;
+    background: #ffffff;
+    /* White background */
+    color: #333333;
+    /* Dark gray text */
     text-align: center;
     padding: 50px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    /* Subtle border */
 }
 
 .hero-content h1 {
@@ -25,7 +31,8 @@ body {
 .hero-content p {
     font-size: 1.2rem;
     margin: 10px 0 20px;
-    color: #dcdcdc;
+    color: #666666;
+    /* Lighter gray for secondary text */
 }
 
 .nav-links {
@@ -34,32 +41,49 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    align-items: center;
+    /* Ensures vertical alignment */
+    gap: 10px;
+    /* Consistent spacing between items */
 }
 
 .nav-links li {
-    display: inline;
+    display: inline-flex;
+    /* Ensures buttons and links align properly */
 }
 
 .nav-links li a,
 .nav-links li button {
-    color: #ffffff;
+    color: #333333;
+    /* Dark gray text */
     text-decoration: none;
-    font-size: 1rem;
-    padding: 10px 15px;
+    font-size: 0.9rem;
+    /* Consistent font size */
+    padding: 8px 12px;
+    /* Consistent padding for all buttons */
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.2);
-    /* Transparent white */
+    background: #f9f9f9;
+    /* Light gray background */
     transition: background-color 0.3s, color 0.3s;
-    border: none;
+    border: 1px solid #e0e0e0;
+    /* Subtle border */
     cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for a professional look */
+    display: inline-block;
+    /* Ensures consistent button size */
+    text-align: center;
+    /* Centers text inside buttons */
 }
 
 .nav-links li a:hover,
 .nav-links li button:hover {
-    background: #ffffff;
-    color: #141e30;
-    /* Deep Blue */
+    background: #e0e0e0;
+    /* Slightly darker gray on hover */
+    color: #000000;
+    /* Black text on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Slightly stronger shadow on hover */
 }
 
 /* Header and Footer Styles */
@@ -67,7 +91,7 @@ header,
 footer {
     text-align: center;
     padding: 1.5em;
-    background: linear-gradient(to right, #4facfe, #00f2fe);
+    background: linear-gradient(to right, #c3cad0, #bcc8c9);
     /* Cool gradient */
     color: #ffffff;
     /* White text */
@@ -115,7 +139,7 @@ nav ul li button {
 nav ul li a:hover,
 nav ul li button:hover {
     background: #ffffff;
-    color: #4facfe;
+    color: #ced6dc;
     /* Cool blue */
 }
 
@@ -123,11 +147,13 @@ nav ul li button:hover {
 main {
     padding: 40px;
     text-align: center;
+    background: #ffffff;
+    /* White background */
 }
 
 /* Music List Background */
 .music-list-background {
-    background: rgb(232 217 255 / 90%);
+    background: rgba(234, 232, 238, 0.9);
     /* Light overlay */
     padding: 20px;
     border-radius: 10px;
@@ -152,7 +178,7 @@ main {
 
 /* Song Item Styles */
 .song-item {
-    background: linear-gradient(to right, #43cea2, #185a9d);
+    background: linear-gradient(to right, #d3dad8, #ccd3da);
     /* Green to Blue gradient */
     padding: 25px;
     border-radius: 15px;
@@ -182,16 +208,21 @@ main {
 /* Music Card */
 .music-card {
     background: #ffffff;
+    /* White background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #e0e0e0;
+    /* Subtle border */
 }
 
 .music-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Slightly stronger shadow on hover */
 }
 
 .music-card img {
@@ -208,12 +239,14 @@ main {
 .music-info h3 {
     font-size: 1.5rem;
     margin: 0 0 10px;
-    color: #333;
+    color: #333333;
+    /* Dark gray text */
 }
 
 .music-info p {
     margin: 5px 0;
-    color: #666;
+    color: #666666;
+    /* Lighter gray for secondary text */
 }
 
 .tags {
@@ -222,8 +255,10 @@ main {
 
 .tags span {
     display: inline-block;
-    background: #e0e0e0;
-    color: #333;
+    background: #f0f0f0;
+    /* Light gray background for tags */
+    color: #333333;
+    /* Dark gray text */
     font-size: 0.9rem;
     padding: 5px 10px;
     border-radius: 20px;
@@ -232,7 +267,7 @@ main {
 
 /* Song Box */
 .song-box {
-    background: linear-gradient(to right, #7fead8, #feb47b);
+    background: linear-gradient(to right, #abb7b5, #d2c7bf);
     /* Orange gradient */
     padding: 20px;
     border-radius: 10px;
@@ -264,7 +299,7 @@ main {
 }
 
 .controls button {
-    background-color: #ff7e5f;
+    background-color: #c6b8b4;
     /* Warm orange */
     color: #ffffff;
     border: none;
@@ -277,7 +312,7 @@ main {
 }
 
 .controls button:hover {
-    background-color: #feb47b;
+    background-color: #b7aba3;
     /* Lighter orange */
 }
 
@@ -288,7 +323,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #007BFF;
+    background-color: #ccd1d6;
     /* Blue background */
     color: white;
     /* White text */
@@ -296,13 +331,13 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #ffffff;
     /* Darker blue on hover */
 }
 
 /* Light Mode Styles */
 body.light {
-    background: linear-gradient(to right, #fceabb, #f8b500);
+    background: linear-gradient(to right, #ffffff, #fdfdfd);
     /* Light Yellow gradient */
     color: #333;
     /* Dark text */
@@ -310,7 +345,7 @@ body.light {
 
 body.light header,
 body.light footer {
-    background: linear-gradient(to right, #5a5556, #a86ba2);
+    background: linear-gradient(to right, #d4cacc, #ffffff);
     /* Any color u want */
     color: #333;
     /* Dark text */
@@ -350,9 +385,12 @@ body.dark main {
 footer {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(to right, #141e30, #977beb);
-    /* Deep Blue gradient */
-    color: #ffffff;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    /* White background */
+    color: #333333;
+    /* Dark gray text */
+    border-top: 1px solid #e0e0e0;
+    /* Subtle border */
     font-size: 1rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 }
